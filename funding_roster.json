@@ -1,0 +1,345 @@
+{
+  "schema_version": 4,
+  "updated": "2026-09-13",
+  "notes": "Durable monitoring priors, discovery sources, applicant profile, funding-policy constants, and application-timing rules for a public repository. Known opportunities are monitored through state; discovery sources find additional opportunities. Current official pages override stale metadata when a recheck occurs.",
+  "applicant_profile": {
+    "program": "Yale Economics PhD",
+    "fields": [
+      "political_economy",
+      "industrial_organization",
+      "environmental_economics"
+    ],
+    "prospectus_status": "approved",
+    "us_citizen": true,
+    "expected_graduation_year": 2028,
+    "fallback_graduation_year": 2029,
+    "expected_remaining_teaching_semesters": {
+      "2028_path": 2,
+      "2029_path": 4
+    },
+    "teaching_waivability": "unresolved_financial_vs_academic_split"
+  },
+  "yale_funding_policy": {
+    "policy_name": "External Fellowships and Combined Award Policy",
+    "edition": "2026-2027",
+    "official_url": "https://catalog.yale.edu/gsas/financing/external-fellowships-combined-award-policy/",
+    "last_verified": "2026-09-13",
+    "rules": {
+      "external_stipend_support": "replaces_yale_stipend_subject_to_combined_award_policy",
+      "combined_award_cap": "department_or_program_stipend_plus_4000",
+      "non_stipend_research_equipment_travel": "generally_additive_and_may_be_held_with_yale_stipend",
+      "financial_teaching_relief": "up_to_one_term_per_fellowship_year_if_policy_conditions_are_met",
+      "future_term_relief": true,
+      "academic_teaching_requirement": "not_waivable_unless_program_guidelines_allow",
+      "residential_fellowship_rule": "special_supplement_rule_may_apply_if_only_teaching_fellowships_remain_and_fellowship_requires_residence_away_from_yale"
+    }
+  },
+  "application_timing_policy": {
+    "third_party_input_lead": "2_calendar_months",
+    "applies_to": [
+      "recommender",
+      "recommendation_letter",
+      "recommendation_form",
+      "faculty_support_letter_or_statement",
+      "nomination_letter_or_similar_third_party_action"
+    ],
+    "rule": "If any required third-party recommendation/support/nomination action applies, set the action date at least 2 calendar months before the operative deadline. This overrides any shorter roster or generic lead time; use a longer lead if verified current-cycle requirements warrant it."
+  },
+  "opportunities": [
+    {
+      "id": "yale_econ_grad_research_support",
+      "name": "Yale Economics Graduate Student Research Support",
+      "sponsor": "Yale Department of Economics",
+      "official_url": "https://economics.yale.edu/graduate/economics-department-graduate-student-research-support-policy",
+      "primary_purpose": "research_funding_access",
+      "secondary_tags": [
+        "data",
+        "conference",
+        "training",
+        "advisor_travel"
+      ],
+      "fit_tags": [
+        "political_economy",
+        "industrial_organization",
+        "environmental_economics"
+      ],
+      "cadence": "standing",
+      "usual_timing": "standing",
+      "default_lead_weeks": 2,
+      "requires_internal_nomination": false,
+      "limited_submission": false,
+      "eligibility_note": "Yale Economics PhD students; verify remaining personal caps before use.",
+      "monitor_note": "Baseline substitute when judging the incremental value of external research/data support. Current policy provides up to $3,000 total for data acquisition while enrolled."
+    },
+    {
+      "id": "yale_isps_research_funding",
+      "name": "ISPS Research Funding",
+      "sponsor": "Yale Institution for Social and Policy Studies",
+      "official_url": "https://isps.yale.edu/isps-research/research-funding",
+      "primary_purpose": "research_funding_access",
+      "secondary_tags": [
+        "data",
+        "survey",
+        "government_effectiveness",
+        "democratic_innovations"
+      ],
+      "fit_tags": [
+        "political_economy",
+        "data",
+        "policy"
+      ],
+      "cadence": "periodic_internal_call",
+      "usual_timing": "verify current fall/spring calls",
+      "default_lead_weeks": 3,
+      "requires_internal_nomination": false,
+      "limited_submission": false,
+      "eligibility_note": "Yale graduate students are eligible for relevant research funds; verify fund-specific fit.",
+      "monitor_note": "High-value internal source, including High-Value Datasets, Government Effectiveness, Democratic Innovations, and Survey Research Methodology funds."
+    },
+    {
+      "id": "horowitz_social_policy",
+      "name": "Horowitz Foundation for Social Policy Grant",
+      "sponsor": "Horowitz Foundation for Social Policy",
+      "official_url": "https://www.horowitz-foundation.org/grants",
+      "primary_purpose": "flexible_unrestricted",
+      "secondary_tags": [
+        "dissertation",
+        "social_policy",
+        "individual_award"
+      ],
+      "fit_tags": [
+        "political_economy",
+        "social_policy"
+      ],
+      "cadence": "annual",
+      "usual_timing": "applications typically close December 1",
+      "default_lead_weeks": 3,
+      "requires_internal_nomination": false,
+      "limited_submission": false,
+      "eligibility_note": "Current PhD/DrPH candidate working on dissertation with proposal defended or topic approved. Beginning in 2023, applicants may not apply more than once.",
+      "monitor_note": "Classify Yale treatment before assigning value: the sponsor pays individuals, but additive value depends on whether Yale treats the award as stipend or non-stipend support."
+    },
+    {
+      "id": "niss_dissertation_grant",
+      "name": "National Institute of Social Sciences Dissertation Grant",
+      "sponsor": "National Institute of Social Sciences",
+      "official_url": "https://www.socialsciencesinstitute.org/grants",
+      "primary_purpose": "research_funding_access",
+      "secondary_tags": [
+        "dissertation",
+        "limited_submission",
+        "university_nomination"
+      ],
+      "fit_tags": [
+        "economics",
+        "political_economy"
+      ],
+      "cadence": "annual_if_renewed",
+      "usual_timing": "spring; do not assume recurrence until a new official cycle appears",
+      "default_lead_weeks": 6,
+      "requires_internal_nomination": true,
+      "limited_submission": true,
+      "nomination_limit": "up_to_two_candidates_per_university_per_grant_period",
+      "eligibility_note": "Economics is an eligible discipline in the 2026 call. University provost or designated officer must submit the nomination.",
+      "monitor_note": "Use this stable grants page to discover the current cycle. The operative deadline is Yale's internal nomination deadline if one exists, not merely the sponsor deadline."
+    },
+    {
+      "id": "hsiao_memorial_social_sciences",
+      "name": "Hsiao Memorial Social Sciences Scholarship",
+      "sponsor": "Asian Pacific Fund",
+      "official_url": "https://asianpacificfund.org/what-we-do/scholarships/",
+      "primary_purpose": "flexible_unrestricted",
+      "secondary_tags": [
+        "scholarship",
+        "social_science"
+      ],
+      "fit_tags": [
+        "economics",
+        "social_science"
+      ],
+      "cadence": "annual_if_renewed",
+      "usual_timing": "annual; verify next cycle",
+      "default_lead_weeks": 2,
+      "requires_internal_nomination": false,
+      "limited_submission": false,
+      "eligibility_note": "Graduate social-science students at U.S. institutions; financial need and sponsor-specific preferences apply.",
+      "monitor_note": "Keep in roster but surface only when current-cycle eligibility and application burden make it worthwhile."
+    },
+    {
+      "id": "aces_dissertation_fellowship",
+      "name": "ACES Dissertation Research Fellowship",
+      "sponsor": "Association for Comparative Economic Studies",
+      "official_url": "https://www.acesecon.org/aces-dissertation-fellowship",
+      "primary_purpose": "protected_research_time",
+      "secondary_tags": [
+        "dissertation",
+        "comparative_economics",
+        "political_economy"
+      ],
+      "fit_tags": [
+        "political_economy",
+        "comparative_institutions",
+        "development"
+      ],
+      "cadence": "annual",
+      "usual_timing": "spring; 2027-2028 applications announced for Spring 2027",
+      "default_lead_weeks": 5,
+      "requires_internal_nomination": false,
+      "limited_submission": false,
+      "eligibility_note": "PhD students working in comparative economics and related areas; verify current call terms when posted.",
+      "monitor_note": "Potentially strong political-economy fit, but assign teaching-relief value only after current award terms and Yale treatment are clear."
+    },
+    {
+      "id": "nsf_economics_ddrig",
+      "name": "NSF Economics Doctoral Dissertation Research Improvement Grant",
+      "sponsor": "U.S. National Science Foundation",
+      "official_url": "https://www.nsf.gov/funding/opportunities/economics",
+      "primary_purpose": "research_funding_access",
+      "secondary_tags": [
+        "data",
+        "fieldwork",
+        "federal",
+        "faculty_submitted"
+      ],
+      "fit_tags": [
+        "economics",
+        "dissertation"
+      ],
+      "cadence": "dormant_pending_new_publication",
+      "usual_timing": "do not infer; follow current NSF publication",
+      "default_lead_weeks": 8,
+      "requires_internal_nomination": false,
+      "limited_submission": false,
+      "eligibility_note": "Faculty-submitted on behalf of doctoral student; supports research expenses rather than stipend or tuition.",
+      "monitor_note": "Do not resurface weekly while dormant. Recheck on state schedule or when a new NSF publication is discovered."
+    },
+    {
+      "id": "nber_innovation_productivity_fellowship",
+      "name": "NBER Fiscal and Economic Effects of Innovation and Productivity Fellowship",
+      "sponsor": "National Bureau of Economic Research",
+      "official_url": "https://www.nber.org/calls-papers-and-proposals/graduate-and-early-career-fellowships-fiscal-and-economic-effects-innovation-and-productivity",
+      "primary_purpose": "protected_research_time",
+      "secondary_tags": [
+        "innovation",
+        "productivity",
+        "dissertation"
+      ],
+      "fit_tags": [
+        "industrial_organization",
+        "innovation",
+        "productivity"
+      ],
+      "cadence": "discontinued_no_new_call_expected",
+      "usual_timing": "none expected",
+      "default_lead_weeks": 5,
+      "requires_internal_nomination": false,
+      "limited_submission": false,
+      "eligibility_note": "Historical fellowship; do not infer a new cycle.",
+      "monitor_note": "Do not resurface this specific fellowship. Continue monitoring NBER for different rotating fellowship topics."
+    }
+  ],
+  "discovery_sources": [
+    {
+      "id": "yale_core_internal",
+      "priority": 1,
+      "scan_cadence": "weekly",
+      "source_type": "official_pages",
+      "pages": [
+        {
+          "name": "ISPS Student Fellowships",
+          "url": "https://isps.yale.edu/isps-opportunities/student-fellowships"
+        },
+        {
+          "name": "MacMillan Fellowships & Grants",
+          "url": "https://macmillan.yale.edu/fellowships-and-grants"
+        },
+        {
+          "name": "EGC Graduate Student Research Support",
+          "url": "https://egc.yale.edu/opportunities-egc/support-graduate-students"
+        },
+        {
+          "name": "Tobin Center Opportunities",
+          "url": "https://tobin.yale.edu/opportunities"
+        }
+      ],
+      "instruction": "High-yield Yale discovery pages. Known rostered programs are monitored through state, not rescanned here. Surface only opportunities for which the Economics PhD applicant is actually eligible."
+    },
+    {
+      "id": "high_yield_external",
+      "priority": 2,
+      "scan_cadence": "weekly",
+      "source_type": "official_pages",
+      "pages": [
+        {
+          "name": "NBER Calls for Papers and Proposals",
+          "url": "https://www.nber.org/calls-papers-and-proposals"
+        },
+        {
+          "name": "Washington Center for Equitable Growth Funding Opportunities",
+          "url": "https://equitablegrowth.org/engage/funding-opportunities/"
+        },
+        {
+          "name": "AERE Awards",
+          "url": "https://www.aere.org/awards"
+        },
+        {
+          "name": "Kilts Center Research Data",
+          "url": "https://www.chicagobooth.edu/research/kilts/research-data"
+        }
+      ],
+      "instruction": "Use for high-fit new calls or valuable data/access opportunities. Current eligibility and deadline claims must come from the sponsor page for the specific opportunity."
+    },
+    {
+      "id": "curated_aggregators",
+      "priority": 3,
+      "scan_cadence": "weekly",
+      "source_type": "aggregator",
+      "pages": [
+        {
+          "name": "YSE External Funds Database",
+          "url": "https://funds.environment.yale.edu/"
+        }
+      ],
+      "instruction": "Discovery only. Do not assume Yale Economics eligibility from inclusion in a YSE database; verify every surfaced candidate with the sponsor."
+    },
+    {
+      "id": "broad_quarterly_discovery",
+      "priority": 4,
+      "scan_cadence": "quarterly",
+      "source_type": "broad_seed_pages",
+      "pages": [
+        {
+          "name": "Cowles Foundation",
+          "url": "https://cowles.yale.edu/"
+        },
+        {
+          "name": "Y-RISE",
+          "url": "https://yrise.yale.edu/"
+        },
+        {
+          "name": "Resources for the Future",
+          "url": "https://www.rff.org/"
+        },
+        {
+          "name": "NET Institute",
+          "url": "https://www.netinst.org/"
+        },
+        {
+          "name": "Energy Institute at Haas",
+          "url": "https://energyathaas.wordpress.com/"
+        },
+        {
+          "name": "NSF Economics",
+          "url": "https://www.nsf.gov/funding/opportunities/economics"
+        }
+      ],
+      "aggregators": [
+        "Grants.gov",
+        "Yale Student Grants & Fellowships database",
+        "SPIN/Pivot",
+        "INOMICS"
+      ],
+      "instruction": "Run only on the first Monday of January, April, July, and October unless targeted evidence justifies an earlier check. These broad pages are discovery seeds, not proof that a current call is open."
+    }
+  ]
+}

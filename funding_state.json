@@ -1,0 +1,82 @@
+{
+  "schema_version": 4,
+  "as_of": "2026-09-13",
+  "notes": "Verified-state and suppression cache. Official current-cycle pages override stale state. Rechecks advance recheck_after; open entries are force-rechecked after deadline expiry. as_of records the latest state-maintenance date, not necessarily every successful weekly scan.",
+  "policy_checks": {
+    "yale_combined_award_policy": {
+      "last_verified": "2026-09-13",
+      "recheck_after": "2027-08-01",
+      "source": "official",
+      "note": "2026-2027 policy stored in funding_roster.json. Do not re-derive weekly; recheck before the next academic-year cycle or if contrary official evidence appears."
+    }
+  },
+  "discovery_checks": {
+    "quarterly_last_run": null
+  },
+  "programs": {
+    "yale_isps_research_funding": {
+      "status": "open",
+      "last_verified": "2026-09-13",
+      "deadline": "2026-10-05",
+      "internal_deadline": null,
+      "recheck_after": "2026-09-20",
+      "source": "official",
+      "note": "Fall 2026 research funding call is open to relevant Yale graduate-student proposals."
+    },
+    "horowitz_social_policy": {
+      "status": "open",
+      "last_verified": "2026-09-13",
+      "deadline": "2026-12-01",
+      "internal_deadline": null,
+      "recheck_after": "2026-10-01",
+      "source": "official",
+      "note": "Current grant is $10,000. Applicant must be dissertation-stage with proposal/topic approved. Beginning in 2023, applicants may not apply more than once. Yale stipend/non-stipend treatment remains to be classified before assigning additive value."
+    },
+    "niss_dissertation_grant": {
+      "status": "closed_recurring",
+      "last_verified": "2026-09-13",
+      "deadline": null,
+      "internal_deadline": null,
+      "recheck_after": "2027-01-15",
+      "source": "official",
+      "note": "2026 cycle is closed. The 2026 program limited each university to two nominees and required submission by the provost or designated officer. Do not infer a 2027 call until posted."
+    },
+    "hsiao_memorial_social_sciences": {
+      "status": "closed_recurring",
+      "last_verified": "2026-09-13",
+      "deadline": null,
+      "internal_deadline": null,
+      "recheck_after": "2027-01-15",
+      "source": "official",
+      "note": "2026 applications are closed; monitor for the 2027 cycle."
+    },
+    "aces_dissertation_fellowship": {
+      "status": "closed_recurring",
+      "last_verified": "2026-09-13",
+      "deadline": null,
+      "internal_deadline": null,
+      "recheck_after": "2027-01-15",
+      "source": "official",
+      "note": "Sponsor states applications for the 2027-2028 fellowship will be accepted in Spring 2027."
+    },
+    "nsf_economics_ddrig": {
+      "status": "dormant",
+      "last_verified": "2026-09-13",
+      "deadline": null,
+      "internal_deadline": null,
+      "recheck_after": "2026-12-01",
+      "source": "official",
+      "note": "NSF Economics shows no upcoming due dates; PD 23-1320 is waiting for a new publication. Do not resurface weekly."
+    },
+    "nber_innovation_productivity_fellowship": {
+      "status": "discontinued",
+      "last_verified": "2026-09-13",
+      "deadline": null,
+      "internal_deadline": null,
+      "recheck_after": "2027-03-01",
+      "source": "user_confirmed",
+      "note": "This specific fellowship will not issue a new call. Do not resurface it; continue monitoring NBER for different fellowship topics."
+    }
+  },
+  "applications": {}
+}
